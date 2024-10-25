@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+}
+.header__container {
+  height: 64px;
+  padding: 1rem 7rem;
+  gap: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header__contact span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+}
+.header__contact a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: right;
+  text-decoration: none;
+  color: #03050F;
+}
+@media (max-width: 768px) {
+  /*md*/
+  .header__container {
+    padding: 1rem 2rem; /* Ajuste del padding en pantallas más pequeñas */
+  }
+}
+@media (max-width: 576px) {
+  /*sm*/
+  .header__contact span {
+    display: none;
+  }
+}

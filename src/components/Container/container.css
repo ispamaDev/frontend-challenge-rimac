@@ -1,0 +1,10 @@
+.container {
+    margin:1rem 10rem
+  }
+  
+  @media (max-width: 768px) {
+    /*md*/
+    .container {
+      margin: 1rem 2rem; /* Ajuste del padding en pantallas más pequeñas */
+    }
+  }

@@ -1,0 +1,41 @@
+
+/* Steps.css */
+.steps-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .step-number {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    color: #7981b2;
+    border: 2px solid #7981b2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .step-label {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .step.active .step-number {
+    background-color: #4F4FFF;
+    color: #fff;
+}
+  
+  .step-divider {
+    color: #1976d2;
+    font-size: 24px;
+  }

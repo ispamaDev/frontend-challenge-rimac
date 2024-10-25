@@ -1,0 +1,10 @@
+.steps {
+  width: 100%;
+}
+.steps__current {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 56px;
+  background: #EDEFFC;
+}

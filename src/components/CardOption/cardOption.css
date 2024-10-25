@@ -1,0 +1,78 @@
+/* Card.css */
+.option__container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 24px;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  flex-direction: column;
+}
+.option__content,
+.option__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.option__content h3,
+.option__content p {
+  text-align: left;
+}
+
+.option__checkbox {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.option__checkmark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .option__title {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.option__container.selected {
+  border: 3px solid #000;
+}
+.option__container.selected label {
+  background: #4caf50;
+}
+#customCheck-select {
+  display: none;
+}
+
+.custom-checkbox2 {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #a9afd9;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-checkbox2::after {
+  content: "✔";
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+#customCheck-select:checked + .custom-checkbox2::after {
+  display: block;
+}

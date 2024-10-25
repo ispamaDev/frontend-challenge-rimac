@@ -1,0 +1,26 @@
+.mybutton {
+  height: 64px;
+  padding: 20px 40px;
+  gap: 8px;
+  border-radius: 40px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 195px;
+}
+.mybutton:disabled {
+  background-color: #cccccc; /* Color gris cuando está deshabilitado */
+  color: #666666; /* Color del texto cuando está deshabilitado */
+  cursor: not-allowed; /* Cambia el cursor cuando está deshabilitado */
+  opacity: 0.6; /* Añade un efecto de opacidad */
+}
+
+@media (max-width: 768px) {
+  .mybutton {
+    height: 56px;
+    width: auto;
+  }
+}
